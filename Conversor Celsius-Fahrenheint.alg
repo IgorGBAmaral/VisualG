@@ -11,8 +11,12 @@ tempC , tempF : real
 op : inteiro
 
 Inicio
+Repita
 //Selecao de operacao
-escreval("Escolha: 1- Celsius para Fahrenheint 2- Fahrenheint para Celsius")
+escreval("Escolha:")
+escreval("1: Celsius para Fahrenheint")
+escreval("2: Fahrenheint para Celsius")
+escreval("3: Finalizar")
 leia(op)
 
 //Caso a operacao seja Celsius para Fahrenheint
@@ -32,9 +36,9 @@ se op = 2 entao
 fimse
 
 //Caso a operacao seja invalida, uma resposta sera dada
-se op <> 1 entao
-   se op <> 2 entao
-      escreval ("Operacao inexistente reinicie o programa")
-   fimse
+se (op <> 1) e (op <> 2) e (op <> 3) entao
+      escreval ("Operacao inexistente tente novamente")
 fimse
+escreval("")
+ate op=3
 Fimalgoritmo
